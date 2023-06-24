@@ -5,8 +5,8 @@ export const Container = styled.div`
 
 padding: 20px;
 border-radius: 1.5rem;
-background: var(--bg-color-700);
-outline: 01px solid var(--bg-color-500);
+background: var(--bg-color-600);
+outline: 01px solid var(--bg-color-600);
 position: relative;
 overflow: hidden;
 > p{
@@ -16,7 +16,7 @@ overflow: hidden;
 }
 
 &:hover{
-    background: var(--bg-color-600);
+    background: var(--bg-color-500);
 }
 
 > img{
