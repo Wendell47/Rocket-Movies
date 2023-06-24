@@ -6,7 +6,7 @@ export const Container = styled.div`
 padding: 20px;
 border-radius: 1.5rem;
 background: var(--bg-color-600);
-outline: 01px solid var(--bg-color-600);
+outline: 01px solid var(--bg-color-500);
 position: relative;
 overflow: hidden;
 > p{
