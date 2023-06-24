@@ -20,7 +20,24 @@ export const Content = styled.div`
 grid-area: content;
 overflow-y: auto;
 
+> div{
+  
+  > button{
+    margin-bottom: 2rem;
+  }
+  > h2{
+    margin-bottom: 3rem;
+  }
+  > div{
+    margin-bottom: 3rem;
+  }
 
+  > h3{
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
 `
 
 export const InputGrid = styled.div`
@@ -54,7 +71,7 @@ display: flex;
 flex-wrap: wrap;
 gap: 30px;
 
-> div{
+> a{
     flex:1 0 auto;
     width: auto;
 }

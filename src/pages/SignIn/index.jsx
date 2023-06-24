@@ -31,9 +31,9 @@ export function SignIn(){
 
                 <Button title="Entrar"></Button>
 
-                <a href="#">
+                <Link to="/SignUp">
                     Criar Conta
-                </a>
+                </Link>
             </Form>
             <BackgroundImg/>
         </Container>

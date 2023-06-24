@@ -5,13 +5,20 @@ import Input from "../../components/Input";
 import { Container, Content, InputGrid, ButtonsArea} from "./styles";
 import Button from "../../components/Button";
 import { TagsArea } from "../../components/TagsArea";
-import Tag from "../../components/Tags";
+import TagAdd from "../../components/TagAdd";
 import { ButtonText } from "../../components/ButtonText";
+import { useNavigate } from "react-router-dom";
 
 
-
-export function Profile () {
+export function CreateMovie () {
     
+
+function handleBack(){
+    
+    navigate(-1)
+  }
+  
+  const navigate = useNavigate()
     return(
         <Container>
         <Header/>
@@ -19,7 +26,10 @@ export function Profile () {
         <Content>
            
         <ContainerContent>
-            <ButtonText  title="Voltar"/>
+            <ButtonText  
+            title="Voltar"
+            onClick={handleBack}
+            />
             <Title title="Novo Filme"/>
         
             <InputGrid>
@@ -27,10 +37,11 @@ export function Profile () {
             <Input placeholder="Sua nota (0 a 5)" type="text"/>
             <Input placeholder="Observações"TextArea={true}/>
             </InputGrid>
-            
+            <h3>Marcadores</h3>
         <TagsArea>
-            <Tag title="React" />
-            <Tag title="React"  disabled={true} isNew={true}/>
+            <TagAdd value="React" />
+            <TagAdd  isNew={true}
+            />
         </TagsArea>
       
             <ButtonsArea>

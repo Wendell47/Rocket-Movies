@@ -1,7 +1,6 @@
 import Input from "../Input";
 import { Container, Profile} from "./styles";
-import { Link } from "react-router-dom";
-import {FiArrowLeft, FiMail, FiUser, FiLock, FiCamera, FiSearch,FiMenu} from 'react-icons/fi';
+import {FiSearch,FiMenu} from 'react-icons/fi';
 import { ButtonText } from "../ButtonText";
 import { MenuMobile } from "../MenuMobile";
 import { useState } from "react"
@@ -23,16 +22,20 @@ export default function Header(){
                 />
 
                 <div className="profile hidden">
-                <Profile >
+                <Profile to="/Profile">
                
 
                 <div>
                     
                     <strong>Wendel Araujo</strong>
-                    <ButtonText title="Sair" className="buttonExit"/>
+                    <ButtonText 
+                    title="Sair" 
+                    className="buttonExit"
+                    />
                 </div>
                  <img src="https://github.com/Wendell47.png" alt="foto de perfil" />
                 </Profile>
+
                 </div>
                 <div className="menuMobileBtn" onClick={() => setMenuIsVisible(true)}>
                 

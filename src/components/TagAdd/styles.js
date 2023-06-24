@@ -1,36 +1,37 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
 
-display: flex;
-align-items: center;
-background-color: ${({ isNew}) => isNew ? "transparent" : "var(--bg-color-900)"};
-color: var(--color-gray-300);
+padding: .5rem 2rem;
+color: var(--color-gray-100);
+border-radius: .5rem;
+background-color: ${({isNew}) => isNew ? "transparent" : "var(--bg-color-700)"};
+font-size: 1.3rem;
 
 border:${({ isNew}) => isNew ? "1px dashed var(--color-gray-300)" : "none"};
 
-margin-bottom: 8px;
-border-radius: 10px;
-padding-right: 16px;
+display: flex;
+gap:10px;
+align-items: center;
+justify-content: space-between;
 
 > button{
-    border:none;
-    background:none;
 
-}
+    background: transparent;
+    border: none;
 
-.button-delete{
-    color: var(--color-red);
-}
-.button-add{
+    > svg{
     color: var(--color-primary);
 }
+
+}
+
+
     >input {
 
-        height: 56px;
-        width: 100%;
-
-        padding: 12px;
+        height: 36px;
+        width: min(100px);
 
         color: var(--color-white);
         background: transparent;
@@ -41,6 +42,13 @@ padding-right: 16px;
             color: var(--color-gray-300);
             
         }
+
+        &:focus-visible{
+            outline: none;
+        }
     }
 
-`;
+&:hover{
+    opacity: 0.9;
+}
+`

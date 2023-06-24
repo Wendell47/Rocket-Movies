@@ -5,9 +5,16 @@ import Button from "../../components/Button"
 import {FiPlus} from 'react-icons/fi'
 import Tag from "../../components/Tags"
 import Ranked from "../../components/ranked"
-import ImgCover from '../../assets/bgimg.jpg'
+import { useNavigate } from "react-router-dom"
 
+  
 export function Home() {
+    
+    function handleMoviePreview(){
+        navigate(`/MoviePreview`)
+    }
+    
+    const navigate = useNavigate()
     return(
         
         <Container>
@@ -22,7 +29,9 @@ export function Home() {
 
                     <Button
                     title="Adicionar Filme"
+                    link="/CreateMovie"
                     icon={FiPlus}
+                    
                     />
 
                     </MoviesTitle>
@@ -33,7 +42,10 @@ export function Home() {
                 <Content>
             
             <MoviesContent>
-                <MovieCard title="Interestellar">
+                <MovieCard 
+                title="Interestellar"
+                onclick={handleMoviePreview}
+                >
                     <Ranked/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam est illum impedit vitae veniam dolores molestias nobis, ab repellendus dolorem aut accusantium. Repellat, reiciendis iure? Nihil consectetur earum facere quasi.</p>
                  

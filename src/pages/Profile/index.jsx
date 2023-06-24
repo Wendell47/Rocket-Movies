@@ -5,15 +5,25 @@ import Input from "../../components/Input";
 import {FiCamera} from "react-icons/fi"
 import { Container, Header, Content, ContainerContentForm, PerfilImg} from "./styles";
 import ContainerContent from "../../components/ContainerContent"
+import { useNavigate } from "react-router-dom";
 
 export function Profile(){
+    function handleBack(){
+    
+        navigate(-1)
+      }
+      
+      const navigate = useNavigate()
 
     return(
         <Container>
         <Header>
             <ContainerContent>
             <div>
-             <ButtonText title="Voltar"/>
+             <ButtonText 
+             title="Voltar"
+             onClick={handleBack}
+             />
             </div>
             </ContainerContent>
       

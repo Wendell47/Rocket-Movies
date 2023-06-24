@@ -10,4 +10,10 @@ display: flex;
 gap:20px;
 flex-wrap: wrap;
 
+@media (max-width:655px){
+    > div{
+    flex: 1 0 auto;
+}
+}
+
 `

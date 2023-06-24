@@ -52,7 +52,7 @@ export const MoviesTitle = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 3rem 0;
-    > button{
+     button{
     
     width: 200px;
  }

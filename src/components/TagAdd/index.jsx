@@ -1,7 +1,7 @@
 import { FiPlus, FiX} from 'react-icons/fi'
 import { Container } from './styles'
 
-export function NoteItem({isNew, value, onClick, ...rest}){
+export default function TagAdd({isNew, value, onClick, ...rest}){
 
     return(
         <Container isNew={isNew}>
@@ -9,7 +9,9 @@ export function NoteItem({isNew, value, onClick, ...rest}){
         type='text'
         value={value}
         readOnly={!isNew}
-        {...rest}/>
+        {...rest}
+        placeholder={isNew ? "Nova Tag" : ""}
+        />
 
         <button
             type='button'

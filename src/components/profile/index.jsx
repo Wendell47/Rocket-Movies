@@ -5,9 +5,9 @@ import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { Form } from "./styles";
 import { Avatar } from "./styles";
-
 export function Profile(){
 
+    
     return(
         <Container>
             <header>

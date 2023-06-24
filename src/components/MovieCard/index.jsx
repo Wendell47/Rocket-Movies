@@ -1,9 +1,11 @@
 import { Container } from "./styles";
 
-export default function MovieCard ({title, imgCard, children}){
+export default function MovieCard ({title, imgCard, children, ...rest}){
 
     return(
-        <Container>
+        <Container
+        {...rest}
+        >
             <h3>{title}</h3>
             {children}
             {imgCard}

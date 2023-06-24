@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
 
@@ -51,7 +51,7 @@ border-bottom: 1px solid var(--bg-color-700);
 
 `
 
-export const Profile = styled.a`
+export const Profile = styled(Link)`
 
 display: inline-flex;
 align-items: center;

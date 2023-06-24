@@ -20,10 +20,10 @@ flex-direction: column;
 justify-content: center;
 text-align: center;
 
-height: 600px;
+
 width: 500px;
 
-padding: 0 80px;
+padding: 30px 80px;
 border-radius: 3rem;
 
 background-color: rgb(255 255 255 / 7%) ;
